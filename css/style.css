@@ -5,6 +5,10 @@
 h1{
     text-align: center;
 }
+p{
+    text-align: center;
+    font-size: large;
+}
 .card{
     margin: 0 auto;
     max-width: 350px;
@@ -31,7 +35,7 @@ h1{
     
 
 }
-.btn{
+.btn-design{
     width: 87px;
     height: 70px;
     font-weight: bold;
