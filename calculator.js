@@ -41,20 +41,28 @@ document.getElementById("assign").addEventListener("click", function (event) {
         const result = document.getElementById("result");
         result.value = r;
     }
-    if (o == "*") {
+    else if (o == "*") {
         r = parseFloat(a) * parseFloat(b);
         document.getElementById("r").innerText = r;
         const result = document.getElementById("result");
         result.value = r;
     }
-    if (o == "/") {
+    else if (o == "/") {
         r = parseFloat(a) / parseFloat(b);
         document.getElementById("r").innerText = r;
         const result = document.getElementById("result");
         result.value = r;
     }
 })
+document.getElementById("parcentage").addEventListener("click", function (event) {
+    const result = document.getElementById("result");
+    b = result.value;
+    document.getElementById("b").innerText = b;
+    r = parseFloat(a) * parseFloat(b) / 100;
+    document.getElementById("r").innerText = r;
+    result.value = r;
+})
 document.getElementById("c").addEventListener("click", function () {
     const result = document.getElementById("result");
     result.value = "";
-})
+});
